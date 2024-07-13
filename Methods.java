@@ -11,35 +11,35 @@ public class Methods {
     public static void main(String[] args) {
 
 // Creates a scanner object for user input
-        Scanner scanner = new Scanner(System.in);
+        Scanner RandomDigits = new Scanner(System.in);
         
 // Asks the user to enter three numbers
         System.out.print("Enter the first number: ");
-        int num1 = scanner.nextInt();
+        int FirstNum = RandomDigits.nextInt();
         System.out.print("Enter the second number: ");
-        int num2 = scanner.nextInt();
+        int SecondNum = RandomDigits.nextInt();
         System.out.print("Enter the third number: ");
-        int num3 = scanner.nextInt();
+        int ThirdNum = RandomDigits.nextInt();
         
 // Determines the largest and smallest numbers
         int largest, smallest;
         
 // Finds the largest number
-        if (num1 >= num2 && num1 >= num3) {
-            largest = num1;
-        } else if (num2 >= num1 && num2 >= num3) {
-            largest = num2;
+        if (FirstNum >= SecondNum && FirstNum >= ThirdNum) {
+            largest = FirstNum;
+        } else if (SecondNum >= FirstNum && SecondNum >= ThirdNum) {
+            largest = SecondNum;
         } else {
-            largest = num3;
+            largest = ThirdNum;
         }
         
 // Finds the smallest number
-        if (num1 <= num2 && num1 <= num3) {
-            smallest = num1;
-        } else if (num2 <= num1 && num2 <= num3) {
-            smallest = num2;
+        if (FirstNum <= SecondNum && FirstNum <= ThirdNum) {
+            smallest = FirstNum;
+        } else if (SecondNum <= FirstNum && SecondNum <= ThirdNum) {
+            smallest = SecondNum;
         } else {
-            smallest = num3;
+            smallest = ThirdNum;
         }
         
 // Prints out the results
